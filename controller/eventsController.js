@@ -71,7 +71,7 @@ export const addParticipateController = async (req, res) => {
         if (event.participate.includes(req.body.id)) {
             res.status(201).send({
                 success: true,
-                message: "You are already register for this event"
+                message: "You have already registered in this event"
             });
         }
 
